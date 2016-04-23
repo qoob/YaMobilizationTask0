@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+
+    android:orientation="horizontal"
+    tools:context="nullwarp.popmusicianslist.DetailedInfo">
+
+
+    <ImageView
+        android:id="@+id/imgDetCover"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="top|left"
+        android:layout_margin="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        android:src="@drawable/rick" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtDetGenres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="3dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dp"
+            android:text="genre, genre, genre"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/txtDetCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="3dp"
+            android:layout_marginBottom="0dp"
+            android:text="N альбомов M песен"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/txtDetLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_marginTop="0dp"
+            android:autoLink="web"
+            android:text="@string/placeholder_website"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/txtDetDescriptionTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="0"
+            android:text="@string/biography"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="0">
+
+            <TextView
+                android:id="@+id/txtDetDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Never gives you up\nNever lets you down" />
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

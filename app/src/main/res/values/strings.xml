@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Исполнители</string>
+    <string name="performer_image_description">Изображение исполнителя</string>
+    <string name="placeholder_website"><a href="http://www.example.com">http://example.com</a></string>
+    <string name="title_activity_detailed_info">DetailedInfo</string>
+    <string name="refreshDB">Обновить</string>
+    <string name="search">Поиск</string>
+    <string name="biography">Биография</string>
+    <string name="deleteData">Удалить\nданные</string>
+</resources>
